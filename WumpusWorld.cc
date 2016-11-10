@@ -8,7 +8,7 @@
 #include <algorithm>
 #include "WumpusWorld.h"
 
-#define PIT_PROBABILITY 0.2
+#define PIT_PROBABILITY 0
 
 using namespace std;
 
