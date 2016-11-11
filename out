@@ -1,0 +1,473 @@
+Welcome to the Wumpus World Simulator v2.7.  Happy hunting!
+
+Trial 1, Try 1 begin
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+| A>|   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = 0
+
+00
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   | A>|   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -1
+
+20
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   | A>|   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -2
+
+40
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   | A>|
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -3
+
+60
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   | A>|
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=1,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -4
+
+70
+Action = TURNLEFT
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   | A^|
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -5
+
+70
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   | A^|
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -6
+
+72
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   | A^|
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -7
+
+74
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   | G |
+|   |   |   | A^|
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=1,Bump=0,Scream=0]
+Agent has gold = 0, agent has arrow = 1
+Current score = -8
+
+76
+Action = GRAB
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   |   |
+|   |   |   | A^|
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 1
+Current score = -9
+
+76
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   |   |
+|   |   |   | A^|
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=1,Scream=0]
+Agent has gold = 1, agent has arrow = 1
+Current score = -10
+
+77
+Action = TURNLEFT
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   |   |
+|   |   |   | A<|
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 1
+Current score = -11
+
+77
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   |   |
+|   |   | A<|   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 1
+Current score = -12
+
+57
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|W  |   |   |   |
+|   | A<|   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=1,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 1
+Current score = -13
+
+37
+Action = SHOOT
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+|   | A<|   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=1,Breeze=0,Glitter=0,Bump=0,Scream=1]
+Agent has gold = 1, agent has arrow = 0
+Current score = -23
+
+37
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+| A<|   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=1,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 0
+Current score = -24
+
+17
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+| A<|   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=1,Breeze=0,Glitter=0,Bump=1,Scream=0]
+Agent has gold = 1, agent has arrow = 0
+Current score = -25
+
+07
+Action = TURNLEFT
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+| Av|   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=1,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 0
+Current score = -26
+
+07
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+| Av|   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=1,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 0
+Current score = -27
+
+05
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+| Av|   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 0
+Current score = -28
+
+03
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+| Av|   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=0,Scream=0]
+Agent has gold = 1, agent has arrow = 0
+Current score = -29
+
+01
+Action = GOFORWARD
+
+World size = 4x4
++---+---+---+---+
+|x  |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+|   |   |   |   |
++---+---+---+---+
+|   |   |   |   |
+| Av|   |   |   |
++---+---+---+---+
+Current percept = [Stench=0,Breeze=0,Glitter=0,Bump=1,Scream=0]
+Agent has gold = 1, agent has arrow = 0
+Current score = -30
+
+00
+Action = CLIMB
+
+Trial 1, Try 1 complete: Score = 969
+
+Trial 1 complete: Average score for trial = 969
+
+All trials completed: Average score for all trials = 969
+Thanks for playing!
+

@@ -21,6 +21,9 @@ private:
     bool shotOutcome;
     bool correctiveAction;
     bool forwardMove;
+    bool wumpusKilled;
+    void markDangerous();
+    void markSafe();
 public:
 	Agent ();
 	~Agent ();
