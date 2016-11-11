@@ -20,6 +20,7 @@ private:
     int location_info[WORLD_SIZE][WORLD_SIZE];
     bool shotOutcome;
     bool correctiveAction;
+    bool forwardMove;
 public:
 	Agent ();
 	~Agent ();

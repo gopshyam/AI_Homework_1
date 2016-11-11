@@ -21,6 +21,7 @@ Agent::Agent ()
     Y = 0;
     agentOrientation = RIGHT;
     shotOutcome = false;
+    forwardMove = false;
 
     //initialize location values
     for (int i = 0; i < WORLD_SIZE; i++){
@@ -41,7 +42,7 @@ void Agent::Initialize ()
 }
 
 void Agent::updateLocation(Action action) {
-    if (action == GOFORWARD){
+    if (forwardMove){
         switch(agentOrientation){
             case UP:
                 Y++;
@@ -104,6 +105,12 @@ Action Agent::Process (Percept& percept)
 	Action action;
 	bool validAction = false;
 
+    if (forwardMove && !percept.Bump){
+        updateLocation(GOFORWARD);
+    }
+    forwardMove = false;
+    location_info[X][Y] = VISITED;
+    
     if (shotOutcome == true) {
         if (percept.Scream) {
             //Mark the wumpus killed
@@ -115,11 +122,6 @@ Action Agent::Process (Percept& percept)
         }
         shotOutcome = false;
     }
-    if (correctiveAction) {
-        action = TURNRIGHT;
-        validAction = true;
-        correctiveAction = false;
-    } 
 
     if (agentHasGold && X == 0 && Y == 0) {
         action = CLIMB;
@@ -127,6 +129,9 @@ Action Agent::Process (Percept& percept)
     }
     if (!validAction && percept.Bump) {
         action = TURNLEFT;
+        if (correctiveAction) {
+            action = TURNRIGHT;
+        }
         validAction = true;
     }
     if (!validAction && percept.Glitter) {
@@ -142,6 +147,7 @@ Action Agent::Process (Percept& percept)
     }
     if (!validAction) {
         action = GOFORWARD;
+        forwardMove = true;
         validAction = true;
     }
     
