@@ -1,3 +1,11 @@
+How my agent works:
+
+I have assumed that the agent starts facing the right, and that there are no pits in this world.
+
+The agent searches the grid for the gold, or the Wumpus. If the agent detects a stench, it first shoots the arrow. If a scream is heard, the tntire world is declared safe and the agent goes around looking for the gold. If the Wumpus is not killed by the arrow, the agent marks the adjacent squares as unsafe, and avoids them in the future. When the agent recovers the gold, it follows a new path to the starting position, and then climbs out. This method may not be optimal for all cases, but works well given the assumptions. 
+
+====================
+
 Wumpus Simulator v2.7 (released 10/27/2015)
 
 Copyright (c) 2015. Washington State University.
