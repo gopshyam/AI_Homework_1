@@ -104,7 +104,7 @@ int main (int argc, char *argv[])
 			{
 				wumpusWorld->Print();
 				percept = wumpusWorld->GetPercept();
-				action = agent->Process (percept, *wumpusWorld);
+				action = agent->Process (percept);
 				cout << "Action = ";
 				PrintAction (action);
 				cout << endl << endl;

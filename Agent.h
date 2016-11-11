@@ -2,23 +2,29 @@
 
 #ifndef AGENT_H
 #define AGENT_H
+#define WORLD_SIZE 1000
 
 #include "Action.h"
 #include "Percept.h"
-#include "Location.h"
-#include "WumpusWorld.h"
+#include "Orientation.h"
 
 class Agent
 {
 private:
-    Location unsafe_locations[1000];
-    int num_unsafe_locations;
-    void add_to_unsafe_locations(Location location);
+    bool agentHasArrow;
+    bool agentHasGold;
+    int X;
+    int Y;
+    Orientation agentOrientation;
+    void updateLocation(Action action);
+    int location_info[WORLD_SIZE][WORLD_SIZE];
+    bool shotOutcome;
+    bool correctiveAction;
 public:
 	Agent ();
 	~Agent ();
 	void Initialize ();
-	Action Process (Percept& percept, WumpusWorld& wumpusWorld);
+	Action Process (Percept& percept);
 	void GameOver (int score);
 };
 

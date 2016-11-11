@@ -20,21 +20,30 @@ WumpusWorld::WumpusWorld (int size)
 	currentState.worldSize = size;
 	// Choose wumpus location (anywhere except [1,1])
 	x = 1; y=1;
-	while ((x == 1) && (y == 1))
+	while ((x == 1) || (y == 1))
 	{
 		x = (rand() % size) + 1;
 		y = (rand() % size) + 1;
 	}
+    int xyRandom = (rand() % 2);
+    int lrRandom = (rand() % 2);
+    if (xyRandom) {
+        if (lrRandom) {
+            x = 4;
+        } else {
+            x = 1;
+        }
+    } else {
+        if (lrRandom) {
+            y = 4;
+        } else {
+            y = 1;
+        }
+    }
 	currentState.wumpusLocation = Location (x, y);
 
 	// Choose gold location (anywhere except [1,1])
-	x = 1; y=1;
-	while ((x == 1) && (y == 1))
-	{
-		x = (rand() % size) + 1;
-		y = (rand() % size) + 1;
-	}
-	currentState.goldLocation = Location (x, y);
+	currentState.goldLocation = Location (4, 4);
 
 	// Choose pit locations (anywhere except [1,1])
 	for (x = 1; x <= size; x++)
